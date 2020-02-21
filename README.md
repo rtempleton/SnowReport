@@ -11,13 +11,13 @@ There are currently two reports you can run in SnowReport
 ##Running SnowReport
 
 You need to provide a properties file with the following entries:  
-**URI**=jdbc:snowflake://<YourAccountURL>/?warehouse=DEMO&role=ACCOUNTADMIN  
+`URI=jdbc:snowflake://<YourAccountURL>/?warehouse=DEMO&role=ACCOUNTADMIN`  
 NOTE: Make sure you include the virtual warehouse to use and the ACCOUNTADMIN role in the connection string. An XS warehouse is fine  
-**USER**=<A user with AccountAdmin privileges>  
-**PASSWORD**=<The users password>  
-**CONCURRENT_TASKS**=<number of concurrent threads>  
+`USER=<A user with AccountAdmin privileges>`  
+`PASSWORD=<The users password>`  
+`CONCURRENT_TASKS=<number of concurrent threads>`  
 The database summary has to make several queries to the INFORMATION_SCHEMA in each database.  
-**TIMEOUT_MINUTES**=<number of minutes to wait>  
+`TIMEOUT_MINUTES=<number of minutes to wait>`  
 In the event there’s a delayed response in our queries, this will prevent the app from hanging indefinitely  
 
 In the terminal run: java -jar <pathToSnowReport.jar> <pathToPropertiesFile>  
