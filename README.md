@@ -8,7 +8,7 @@ There are currently two reports you can run in SnowReport
 **DatabaseSummary** - This report creates a tree of all DATABASES in the account and details all sequences, streams, procedures, functions, tasks, stages, and pipes within each SCHEMA  
 ![DatabaseSummaryScreenShot.PNG](https://github.com/rtempleton/SnowReport/blob/master/img/DatabaseSummaryScreenShot.PNG)  
 
-##Running SnowReport
+## Running SnowReport
 
 You need to provide a properties file with the following entries:  
 `URI=jdbc:snowflake://<YourAccountURL>/?warehouse=DEMO&role=ACCOUNTADMIN`  
