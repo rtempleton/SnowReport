@@ -20,7 +20,7 @@ The database summary has to make several queries to the INFORMATION_SCHEMA in ea
 `TIMEOUT_MINUTES=<number of minutes to wait>`  
 In the event there’s a delayed response in our queries, this will prevent the app from hanging indefinitely  
 
-In the terminal run: java -jar <pathToSnowReport.jar>  <pathToPropertiesFile>  
+In the terminal run: java -jar pathToSnowReport.jar pathToPropertiesFile  
 
 ![ExampleScreenShot.PNG](https://github.com/rtempleton/SnowReport/blob/master/img/ExampleScreenShot.PNG)
 
